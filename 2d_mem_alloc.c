@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define SIZE 10
+
 void foglal(int*** ptomb, int magas, int szeles)
 {
 	int** uj;
@@ -20,11 +22,11 @@ void foglal(int*** ptomb, int magas, int szeles)
 int main()
 {
 	int** ptomb;
-	foglal(&ptomb, 10,10);
+	foglal(&ptomb, SIZE,SIZE);
 	int i,j;
-	for(i = 0; i < 10; i++)
+	for(i = 0; i < SIZE; i++)
 	{
-		for(j = 0; j < 10; j++)
+		for(j = 0; j < SIZE; j++)
 		{
 			printf("%d ", ptomb[i][j]);
 		}
