@@ -48,9 +48,9 @@ int getint(int *p){
 	return (c);
 }
 
-int main(int argc ,char* argv[])
+int main(void)
 {
-	int* num = (int*)calloc(sizeof(int),0);
+	int* num = (int*)malloc(sizeof(int),0);
 	
 	printf("Please enter a number: ");
 	
